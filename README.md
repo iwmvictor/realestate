@@ -3,4 +3,4 @@
 ```
 [Inspo 1](https://tripalink.com/)
 ```
-![UI Preview]('./../public/preview.jpg')
+![UI Preview](./public/preview.jpg)
