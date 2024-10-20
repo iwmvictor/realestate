@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
+:root {
+  --bg-color: #f7f7f9;
+  --white-color: #ffffff;
+  --accent-color: #05052b;
+  --yellow-color: #e5ff77;
+  --blue-color: #d73fb6;
+  --red-color: #fd7672;
+  --box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  --transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--accent-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  display: flex;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: var(--transition);
+}
+
+/* REUSABLE */
+.container {
+  width: 80%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  max-width: 1200px;
 }

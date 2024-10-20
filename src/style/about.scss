@@ -1,0 +1,161 @@
+$bg-color: #f7f7f9;
+$white-color: #ffffff;
+$accent-color: #05052b;
+$yellow-color: #e5ff77;
+$blue-color: #d73fb6;
+$red-color: #fd7672;
+
+$box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+$transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+
+.about-page {
+    width: 100%;
+    position: relative;
+    padding-top: 4rem;
+
+  // Hero Section Styling
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+
+    .img {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        object-fit: cover;
+      }
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        max-width: 500px;
+        margin-left: 30px;
+
+        span {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #ff6600;
+          letter-spacing: 2px;
+          margin-bottom: 15px;
+          display: block;
+        }
+
+        h2 {
+          font-size: 32px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #666;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  // Vision Section Styling
+  .vision {
+    text-align: center;
+    margin: 50px 0;
+
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ff6600;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+
+  // Mission Section Styling
+  .mission {
+    padding: 50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+
+      .box {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: calc(33.333% - 20px); // Ensures three boxes per row
+
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #666;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  // Responsive Styling
+  @media (max-width: 1200px) {
+    .hero {
+      flex-direction: column;
+
+      .img {
+        margin-bottom: 20px;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .container {
+        margin-left: 0;
+
+        .content {
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+
+    .mission .div {
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        width: 100%;
+      }
+    }
+  }
+}
