@@ -46,7 +46,7 @@ function Header() {
         <div className="top">
           <div className="container">
             <div className="content">
-              <Link className="logo">
+              <Link to={"/"} className="logo">
                 <img src={logo} alt="Rwandanna" />
               </Link>
               {/*
@@ -59,7 +59,7 @@ function Header() {
                     </a>
                   </li>
                   <li>
-                    <a href="/sell">Sell</a>
+                    <a href="realestate/sell">Sell</a>
                   </li>
                   <li>
                     <a href="">Rent</a>
